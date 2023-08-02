@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Portal del Ciudadano</string>
+    <string name="title_activity_main">Portal del Ciudadano</string>
+    <string name="package_name">cu.portal.ciudadano</string>
+    <string name="custom_url_scheme">cu.portal.ciudadano</string>
+</resources>
