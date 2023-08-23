@@ -41,7 +41,7 @@
         <ion-tab-button tab="tab1" @click="goBack">          
           <ion-label><img style="width: 90%;" src="/img/back.png" alt=""></ion-label>
         </ion-tab-button>
-        <ion-tab-button tab="tab2" href="tab2">      
+        <ion-tab-button tab="tab2" href="/tabs/tab2">
           <ion-label><img style="width: 90%;" src="/img/help.png" alt=""></ion-label>
         </ion-tab-button>
         <ion-tab-button tab="tab3" @click="presentAlert">
@@ -66,9 +66,6 @@ import router from '../router';
 import { App } from '@capacitor/app';
 
 const ionRouter = useIonRouter();
-
-
-
 
 onIonViewDidEnter(async () => {
 
@@ -113,7 +110,7 @@ const alertButtons = [
 
 const goBack = async() => { 
   if (!ionRouter.canGoBack()) {
-    presentAlert()
+    router.push('/tabs/tab1');
   }else{
     ionRouter.back()
   }

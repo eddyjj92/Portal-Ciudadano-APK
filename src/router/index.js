@@ -27,8 +27,9 @@ const routes = [
         component: () => import('@/views/Tab3Page.vue')
       },
       {
-        path: 'rodas',
-        component: () => import('@/views/Rodas.vue')
+        path: 'noticias/:municipio',
+        component: () => import('@/views/Noticias.vue'),
+        props: true
       }
     ]
   }
